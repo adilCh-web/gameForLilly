@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="image/png; charset=UTF-8" />
+    <title>Pepa Pig Game</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheet.css" />
+    <script src = "peppa.js" defer></script>
+    
+</head>
+
+
+<body>
+
+        
+        <div id = "screen">
+          <h4>For my Daughter <img src ="./img/heart.png" alt ="heart emoji" width = "20px"> <span>Lilia</span><img src ="./img/heart.png" alt ="heart emoji" width = "20px"> 12/2021</h4>
+          <nav>
+            <ul>
+              <li id = "seconds"></li>
+              <li><a id = "start" onclick = "starting();interval" href = "#">Start</a></li>
+              <li id = "scoreLabel"></li>
+              <li id = "treesLabel"></li>
+              <li id = "bonusLabel"></li>
+            </ul>
+          </nav>
+        </div>
+
+        
+        <div id = "gameScreen">
+        <img id = "logo" src = "./img/logo.png"  >
+
+   
+            <div class ="grid-container">
+              <img id = "img1"  src = "./img/background.png" >
+              <img id = "img2"  src = "./img/background.png" >
+              <img id = "img3"  src = "./img/background.png" >
+              <img id = "img4"  src = "./img/background.png" >
+              <img id = "img5"  src = "./img/background.png" >
+              <img id = "img6" src = "./img/background.png" >
+              <img id = "img7" src = "./img/background.png" >
+              <img id = "img8" src = "./img/background.png" >
+              <img id = "img9" src = "./img/background.png" >
+              <img id = "img10" src = "./img/background.png" >
+              <img id = "img11" src = "./img/background.png" >
+              <img id = "img12" src = "./img/background.png" >
+              <img id = "img13" src = "./img/background.png" >
+              <img id = "img14" src = "./img/background.png" >
+
+            </div>
+            <div class ="grid-container">
+
+                <img id = "img15" src = "./img/background.png">
+                <img id = "img16" src = "./img/background.png" >
+                <img id = "img17" src = "./img/background.png" >
+                <img id = "img18" src = "./img/background.png" >
+                <img id = "img19" src = "./img/background.png" >
+                <img id = "img20" src = "./img/background.png" >
+                <img id = "img21" src = "./img/background.png" >
+                <img id = "img22" src = "./img/background.png" >
+                <img id = "img23" src = "./img/background.png" >
+                <img id = "img24" src = "./img/background.png" >
+                <img id = "img25" src = "./img/background.png" >
+                <img id = "img26" src = "./img/background.png" >
+                <img id = "img27" src = "./img/background.png" >
+                <img id = "img28" src = "./img/background.png" >
+
+            </div>
+              <div class ="grid-container">
+                <img id = "img29" src = "./img/background.png" >
+                <img id = "img30" src = "./img/background.png" >
+                <img id = "img31" src = "./img/background.png" >
+                <img id = "img32" src = "./img/background.png" >
+                <img id = "img33" src = "./img/background.png" >
+                <img id = "img34" src = "./img/background.png" >
+                <img id = "img35" src = "./img/background.png" >
+                <img id = "img36" src = "./img/background.png" >
+                <img id = "img37" src = "./img/background.png" >
+                <img id = "img38" src = "./img/background.png" >
+                <img id = "img39" src = "./img/background.png" >
+                <img id = "img40" src = "./img/background.png" >
+                <img id = "img41" src = "./img/background.png" >
+                <img id = "img42" src = "./img/background.png" >
+
+
+              </div>
+              <div class ="grid-container">
+                <img id = "img43" src = "./img/background.png" >
+                <img id = "img44" src = "./img/background.png" >
+                <img id = "img45" src = "./img/background.png" >
+                <img id = "img46" src = "./img/background.png" >
+                <img id = "img47" src = "./img/background.png" >
+                <img id = "img48" src = "./img/background.png" >
+                <img id = "img49" src = "./img/background.png" >
+                <img id = "img50" src = "./img/background.png" >
+                <img id = "img51" src = "./img/background.png" >
+                <img id = "img52" src = "./img/background.png" >
+                <img id = "img53" src = "./img/background.png" >
+                <img id = "img54" src = "./img/background.png" >
+                <img id = "img55" src = "./img/background.png" >
+                <img id = "img56" src = "./img/background.png" >
+
+              </div>
+              <div class ="grid-container">
+                <img id = "img57" src = "./img/background.png" >
+                <img id = "img58" src = "./img/background.png" >
+                <img id = "img59" src = "./img/background.png" >
+                <img id = "img60" src = "./img/background.png" >
+                <img id = "img61" src = "./img/background.png" >
+                <img id = "img62" src = "./img/background.png" >
+                <img id = "img63" src = "./img/background.png" >
+                <img id = "img64" src = "./img/background.png" >
+                <img id = "img65" src = "./img/background.png" >
+                <img id = "img66" src = "./img/background.png" >
+                <img id = "img67" src = "./img/background.png" >
+                <img id = "img68" src = "./img/background.png" >
+                <img id = "img69" src = "./img/background.png" >
+                <img id = "img70" src = "./img/background.png" >
+
+  
+              </div>
+              <div class ="grid-container">
+                <img id = "img71" src = "./img/background.png" >
+                <img id = "img72" src = "./img/background.png" >
+                <img id = "img73" src = "./img/background.png" >
+                <img id = "img74" src = "./img/background.png" >
+                <img id = "img75" src = "./img/background.png" >
+                <img id = "img76" src = "./img/background.png" >
+                <img id = "img77" src = "./img/background.png" >
+                <img id = "img78" src = "./img/background.png" >
+                <img id = "img79" src = "./img/background.png" >
+                <img id = "img80" src = "./img/background.png" >
+                <img id = "img81" src = "./img/background.png" >
+                <img id = "img82" src = "./img/background.png" >
+                <img id = "img83" src = "./img/background.png" >
+                <img id = "img84" src = "./img/background.png" >
+               
+
+              </div>
+          </div>
+
+
+
+          <div id = "control">
+              <div id = "up" >
+                  <button class ="btn" onclick = "moveUp()">UP</button>
+              </div>
+              <div id = "rightLeft">
+                <button class = "btn" onclick = "moveLeft()">left</button>
+                <button class = "btn" onclick = "moveRight()">right</button>
+            </div>
+            <div id = "down">
+                <button class = "btn" onclick="moveDown()">down</button>
+            </div>
+            <div id = "bonus">
+              <button class = "btn" id = "axe" onclick = "usingBonus()">Bonus</button>
+            </div>
+
+
+          </div>
+
+
+          <div>
+            <p id ="news"></p>
+          </div>
+
+
+
+    
+</body>
+</html>
