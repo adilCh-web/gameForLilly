@@ -75,7 +75,6 @@ HTML, body {
   li#scoreLabel
       {
         font-size: 20px;
-        letter-spacing: 0px;
       }
   }
 
@@ -91,7 +90,16 @@ HTML, body {
   }
   
   
-  
+  @media only screen and  (min-width:450px) {
+    #start
+      {
+        letter-spacing:.55rem;
+      }
+      #scoreLabel
+      {
+        letter-spacing:.55rem;
+      }
+    }
   
   
   .grid-container img
@@ -157,7 +165,6 @@ HTML, body {
       {
       
         color:pink;
-        letter-spacing: 0.55rem;
         text-decoration: none;
   
       }
@@ -176,7 +183,6 @@ HTML, body {
       #scoreLabel
       {
         font-weight: bold;
-        letter-spacing: 5px;
         text-align: center;
         padding:0px;
         margin:0px;

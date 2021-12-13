@@ -110,7 +110,7 @@ function addTree()
     for (let i=0;i<3;i++)  //30 rows with tress (obstacle) 50%
     {
         let id_ = "img"+randomize(1,84)
-        if((id_!=="img16")&& (id_!=="img15")&&(document.getElementById(id_).src.includes(peppaLeft.slice(-10)) == false)&&(document.getElementById(id_).src.includes(peppaRight.slice(-10)) == false) && (pepaFriends.includes(document.getElementById(id_).src) == false))
+        if((id_!=="img16")&& (id_!=="img15")&&(document.getElementById(id_).src.includes(peppaLeft.slice(-10)) == false)&&(document.getElementById(id_).src.includes(peppaRight.slice(-10)) == false) && (pepaFriends[0].includes(document.getElementById(id_).src.slice(-10)) == false && pepaFriends[1].includes(document.getElementById(id_).src.slice(-10)) == false && pepaFriends[2].includes(document.getElementById(id_).src.slice(-10)) == false && pepaFriends[3].includes(document.getElementById(id_).src.slice(-10)) == false && pepaFriends[4].includes(document.getElementById(id_).src.slice(-10)) == false && pepaFriends[5].includes(document.getElementById(id_).src.slice(-10)) == false && pepaFriends[6].includes(document.getElementById(id_).src.slice(-10)) == false && pepaFriends[7].includes(document.getElementById(id_).src.slice(-10)) == false))
         {
             let picSrc = trees[randomize(0,3)]
             document.getElementById(id_).src = picSrc
@@ -121,8 +121,9 @@ function addTree()
         let idFriend = "img" + randomize(1,84)
         if((document.getElementById(idFriend).src!==peppaLeft)&&(document.getElementById(idFriend).src!==peppaRight))
         {
-            document.getElementById(idFriend).src = pepaFriends[randomize(0,pepaFriends.length-1)];
-            friend = true 
+            document.getElementById(idFriend).src=pepaFriends[randomize(0,pepaFriends.length-1)]
+            setTimeout(()=>{document.getElementById(idFriend).src=emptySpace},4000);
+            friend = false 
             // console.log(pepaFriends[randomize(0,pepaFriends.length-1)])
         }
     if (score >= 20)
@@ -236,7 +237,7 @@ function displayBonus()
 {
     let id_ = "img"+randomize(1,84)
 
-    if((document.getElementById(id_).src!==peppaLeft)&&(document.getElementById(id_).src!==peppaRight) && (pepaFriends.includes(document.getElementById(id_).src) === false))
+    if((document.getElementById(id_).src.includes(peppaLeft.slice(-15)) == false)&&(document.getElementById(id_).src.includes(peppaRight.slice(-15)) == false) && (pepaFriends[0].includes(document.getElementById(id_).src.slice(-10)) == false && pepaFriends[1].includes(document.getElementById(id_).src.slice(-10)) == false && pepaFriends[2].includes(document.getElementById(id_).src.slice(-10)) == false && pepaFriends[3].includes(document.getElementById(id_).src.slice(-10)) == false && pepaFriends[4].includes(document.getElementById(id_).src.slice(-10)) == false && pepaFriends[5].includes(document.getElementById(id_).src.slice(-10)) == false && pepaFriends[6].includes(document.getElementById(id_).src.slice(-10)) == false && pepaFriends[7].includes(document.getElementById(id_).src.slice(-10)) == false))
     {
         document.getElementById(id_).src = axe
         myFunction = ()=>{document.getElementById(id_).src = emptySpace}
